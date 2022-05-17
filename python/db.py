@@ -172,8 +172,8 @@ def executeSQL(dbname,query,params={}):
 
             return postgresdb.executeSQL(query,params)
 
-#---------- begin function queryResults ----------
-# @describe returns a dictionary of records returned from query
+#---------- begin function connect ----------
+# @describe returns an object containing connection and cursor
 # @param dbname str - database name from database tag in config.xml
 # @return object - connection details
 # @usage cursor, conn=db.connect('dbtest')
